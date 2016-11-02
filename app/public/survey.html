@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FriendFinder</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+       <script src="https://use.fontawesome.com/3dd930ec9f.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                        <h2>Survey Questions</h2>
+                        <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <form>
+                        <h3><strong>About You</strong></h3>
+                        <div class="form-group">
+                            <h4>Name (Required)<h4>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <h4>Link to Photo Image (Required)</h4>
+                            <input type="text" class="form-control" id="photo" required>
+                        </div>
+                        <hr>
+                        <h3><strong>Question 1</strong></h3>
+                        <h4>When the weather is good, I like to be outdoors.</h4>
+                        <select style="width: 160px" class="form-control chosen-select" id="question1">
+                            <option value='1'>1 (strongly disagree)</option>
+                            <option value='2'>2</option>
+                            <option value='3'>3</option>
+                            <option value='4'>4</option>
+                            <option value='5'>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 2</strong></h3>
+                        <h4>I would rather stay up late than wake up early.</h4>
+                        <select style="width: 160px" class="form-control" id="question2">
+                                <option value='1'>1 (strongly disagree)</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 3</strong></h3>
+                        <h4>I'm more likely to read a book than watch television.</h4>
+                        <select style="width: 160px" class="form-control" id="question3">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 4</strong></h3>
+                        <h4>The reporting on CNN is more biased than the reporting on Fox News.</h4>
+                        <select style="width: 160px" class="form-control" id="question4">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 5</strong></h3>
+                        <h4>I would rather spend time with a big group of friends than with one friend.</h4>
+                        <select style="width: 160px" class="form-control" id="question5">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 6</strong></h3>
+                        <h4>I would like to travel more.</h4>
+                        <select style="width: 160px" class="form-control" id="question6">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 7</strong></h3>
+                        <h4>I prefer relaxing at the beach to hiking in the mountains.</h4>
+                        <select style="width: 160px" class="form-control" id="question7">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 8</strong></h3>
+                        <h4>I would rather drive than use public transportation.</h4>
+                        <select style="width: 160px" class="form-control" id=question8>
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 9</strong></h3>
+                        <h4>I don't like to leave dirty dishes in the sink overnight.</h4>
+                        <select style="width: 160px" class="form-control" id="question9">
+                                <option value=1>1 (strongly disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (strongly agree)</option>
+                        </select>
+                        <h3><strong>Question 10</strong></h3>
+                        <h4>I don't care whether my habits are good for my health. Life is short.</h4>
+                        <select style="width: 160px" class="form-control" id="question10">
+                                <option value='1'>1 (strongly disagree)</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5 (strongly agree)</option>
+                        </select>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+                        <hr>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="/api/friends" class="navbar-link">API Friends List</a> | <a href="https://github.com/cmankey/FriendFinder" class="navbar-link">GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body best-match">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+    function displayBestMatch(bestMatch) {
+        console.log('dBM ran');
+
+            var bestMatchHtml = ''
+            
+            if (bestMatch.length > 0) {  
+    
+                for (var i = 0; i < bestMatch.length; i++) {
+                    bestMatchHtml += '<h2>' + bestMatch[i].name + '</h2>';
+                    bestMatchHtml += '<img src="' + bestMatch[i].photo + '" alt="Photo of your Best Match" width=200>';
+                }
+                
+                $('.best-match').html(bestMatchHtml);
+                $('#modal').modal('show');
+            
+            } else {
+                console.log('else ran')
+            
+                $('.best-match').html('<h2>No data available for matching</h2>' );
+                $('#modal').modal('show'); 
+            
+            }
+    };
+
+    $('.chosen-select').chosen();
+
+    $("#submit").on("click", function() {
+        var scores = [];
+        for (var i = 1; i < 11; i++) {
+            scores.push(parseInt($('#question' + i).val()));
+        } 
+            
+        var newFriend = {
+            name: $('#name').val().trim(),
+            photo: $('#photo').val().trim(),
+            scores: scores
+        }
+
+        console.log(newFriend);
+
+        var currentURL = window.location.origin;
+
+        $.post(currentURL + "/api/friends", newFriend, function(data) {
+            console.log('post ran');
+
+            displayBestMatch(data);
+
+            $('#name').val('')
+            $('#photo').val('')
+            for (var i = 1; i < 11; i++) {
+                ($('#question' + i).val('1'));
+            } 
+
+        });
+
+    return false;
+
+    });
+
+</script>
