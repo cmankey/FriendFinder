@@ -7,8 +7,6 @@
         crossorigin="anonymous"></script>
        <script src="https://use.fontawesome.com/3dd930ec9f.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -33,13 +31,14 @@
                         <hr>
                         <h3><strong>Question 1</strong></h3>
                         <h4>When the weather is good, I like to be outdoors.</h4>
-                        <select style="width: 160px" class="form-control chosen-select" id="question1">
+                        <select style="width: 160px" class="form-control" id="question1">
                             <option value='1'>1 (strongly disagree)</option>
                             <option value='2'>2</option>
                             <option value='3'>3</option>
                             <option value='4'>4</option>
                             <option value='5'>5 (strongly agree)</option>
                         </select>
+
                         <h3><strong>Question 2</strong></h3>
                         <h4>I would rather stay up late than wake up early.</h4>
                         <select style="width: 160px" class="form-control" id="question2">
@@ -122,6 +121,7 @@
                                 <option value='5'>5 (strongly agree)</option>
                         </select>
                         <br>
+                        <br>
                         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
                         <hr>
                     </form>
@@ -176,8 +176,6 @@
             }
     };
 
-    $('.chosen-select').chosen();
-
     $("#submit").on("click", function() {
         var scores = [];
         for (var i = 1; i < 11; i++) {
@@ -195,7 +193,6 @@
         var currentURL = window.location.origin;
 
         $.post(currentURL + "/api/friends", newFriend, function(data) {
-            console.log('post ran');
 
             displayBestMatch(data);
 
